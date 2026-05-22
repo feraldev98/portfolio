@@ -1,37 +1,27 @@
-import { Navbar } from "@/components/Navbar";
-import { profileNameAscii } from "@/static/profileNameAscii";
+'use client'
+import Terminal from "@/components/Terminal";
+import { useState } from "react";
 
 export default function Home() {
+  const [lang, setLang] = useState({
+    lang: "en",
+    flag: "🇪🇸",
+  });
   return (
-    <div className="w-screen flex flex-col items-center justify-center">
+    <Terminal lang={lang}>
 
-      <div className="border border-primary my-2 rounded-xs w-[calc(100%-1rem)] flex flex-col justify-center items-center py-2">  
-        {/* HEADER */}
-        <div className="border-b border-primary text-sm w-full grid grid-cols-3 gap-2 px-4 py-1">
-          <div className="grid grid-cols-4 gap-2 text-sm w-full col-span-2">
-            <span>FERAL BIOS (TM)</span>
-            <span>© 2026 FERAL</span>
-            <span>VER 1.0.0</span>
-            <span>SYS: ONLINE</span>
-          </div>
-          <div className="grid grid-cols-2 text-sm ml-auto text-right gap-6">
-            <span>PORT: 8080</span>
-            <span>← LANG: EN →</span>
-          </div>
-        </div>
-        {/* NAV */}
-        <div className="grid grid-cols-6 gap-2 w-[calc(100%-1rem)] border text-(--primary) border-(--primary) mt-4 mb-2 mx-4 py-1 text-xl">
-          <span className="text-center place-content-center">SUMMARY</span>
-          <span className="text-center place-content-center">PROJECTS</span>
-          <span className="text-center place-content-center">SKILLS</span>
-          <span className="text-center place-content-center">EXPERIENCE</span>
-          <span className="text-center place-content-center">CONTACT</span>
-          <span className="text-right text-xl pr-2 place-content-center text-shadow-2xs text-shadow-sky-300">{'>_TERMINAL'}</span>
-        </div>
+      wasaaa
+      
+    </Terminal>
+  );
+}
 
-        {/* TERMINAL & ASCII IMG */}
-        <div className="grid grid-cols-5 gap-1 w-[calc(100%-1rem)] text-(--primary) mx-4 pt-1">
-          <div className="col-span-2 border border-(--primary) flex flex-col gap-1 px-2 py-1">
+
+
+
+/*
+
+<div className="col-span-2 border border-(--primary) flex flex-col gap-1 px-2 py-1">
             <span className="text-base">{'> SYSTEM.frl'}</span>
             <span className="text-sm">Initializing developer profile...</span>
             <div className="flex flex-col">
@@ -65,11 +55,37 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          izquierda parte. terminal izquierda
+
+
+
+
           <div className="col-span-3 border border-(--primary)">
             
           </div>
+
+
+          terminal derecha
+
+
+
+
+
+
+        <div className="grid grid-cols-5 gap-1 w-[calc(100%-1rem)] text-(--primary) mx-4 pt-1">
+          
+          
         </div>
+      marco de la terminal completa
+
+
+
+<div className="border border-primary my-2 rounded-xs w-[calc(100%-1rem)] flex flex-col justify-center items-center py-2">  
+        
+        
+
+        
       </div>
-    </div>
-  );
-}
+      marco suoerior
+*/
